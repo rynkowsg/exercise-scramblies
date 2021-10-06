@@ -1,0 +1,2 @@
+{:min-bb-version "0.4.3"
+ :tasks          {test (clojure "-M:test -m kaocha.runner --config-file tests.edn")}}
