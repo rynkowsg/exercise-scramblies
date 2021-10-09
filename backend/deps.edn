@@ -2,10 +2,14 @@
  ["src"]
 
  :deps
- {org.clojure/clojure {:mvn/version "1.10.3"}}
+ {com.taoensso/timbre {:mvn/version "5.1.2"}
+  org.clojure/clojure {:mvn/version "1.10.3"}
+  http-kit/http-kit   {:mvn/version "2.5.3"}
+  integrant/integrant {:mvn/version "0.8.0"}
+  metosin/reitit      {:mvn/version "0.5.15"}}
 
  :aliases
  {:test
   {:extra-paths ["test"]
    :extra-deps  {org.clojure/test.check {:mvn/version "1.1.0"}
-                 lambdaisland/kaocha    {:mvn/version "1.0.887"}}}}}
+                 lambdaisland/kaocha    {:mvn/version "1.0.902"}}}}}
