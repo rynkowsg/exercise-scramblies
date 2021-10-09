@@ -1,7 +1,7 @@
-(ns scramble-service.core
+(ns scramblies-service.core
   (:require
    [org.httpkit.server :as httpkit]
-   [scramble-service.api :as api]
+   [scramblies-service.api :as api]
    [taoensso.timbre :as timbre]))
 
 (defn -main [& _args]

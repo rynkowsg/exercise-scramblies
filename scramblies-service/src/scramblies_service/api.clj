@@ -1,4 +1,4 @@
-(ns scramble-service.api
+(ns scramblies-service.api
   (:require
    [muuntaja.core :as muuntaja]
    [reitit.coercion.malli :as rc-malli]
@@ -6,7 +6,7 @@
    [reitit.ring.coercion :as rrc]
    [reitit.ring.middleware.muuntaja :as rrm-muuntaja]
    [reitit.ring.middleware.parameters :as rrm-parameters]
-   [scramble-service.domain :as domain]))
+   [scramblies-service.domain :as domain]))
 
 (def routes
   ["/api"

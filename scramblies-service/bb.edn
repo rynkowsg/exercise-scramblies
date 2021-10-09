@@ -1,4 +1,4 @@
 {:min-bb-version "0.4.3"
- :tasks          {run-server (clojure "-M -m scramble-service.core")
+ :tasks          {run-server (clojure "-M -m scramblies-service.core")
                   test       (clojure "-M:test -m kaocha.runner --config-file tests.edn")
                   test-watch (shell "bb test --watch")}}

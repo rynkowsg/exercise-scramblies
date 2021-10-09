@@ -1,3 +1,3 @@
-(ns scramble-service.api-test
+(ns scramblies-service.api-test
   (:require
    [clojure.test :refer :all]))

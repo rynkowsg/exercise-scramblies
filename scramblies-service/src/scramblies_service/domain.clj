@@ -1,4 +1,4 @@
-(ns scramble-service.domain
+(ns scramblies-service.domain
   (:require
    [clojure.set :as set]))
 
