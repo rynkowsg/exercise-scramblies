@@ -1,6 +1,6 @@
-(ns core-test
+(ns scramble-service.domain-test
   (:require
-   [core :as SUT]
+   [scramble-service.domain :as SUT]
    [clojure.test :refer [deftest is testing]]))
 
 (deftest test-example
