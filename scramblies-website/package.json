@@ -1,0 +1,25 @@
+{
+  "name": "scramblies-website",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "shadow:clj": "clj -M:dev:test:shadow-cljs",
+    "shadow:npm": "shadow-cljs",
+    "build:watch": "yarn shadow:clj watch client",
+    "build:release": "yarn shadow:clj release client",
+    "build:report": "yarn shadow:clj run shadow.cljs.build-report client target/build-report.html",
+    "repl:build": "yarn shadow:npm cljs-repl client",
+    "repl:browser": "yarn shadow:npm browser-repl",
+    "pom:clj": "clj -Spom -A:dev:test",
+    "pom:shadow": "yarn shadow:npm pom",
+    "pom": "yarn pom:clj"
+  },
+  "dependencies": {
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "highlight.js": "11.1.0",
+    "shadow-cljs": "2.15.10"
+  }
+}

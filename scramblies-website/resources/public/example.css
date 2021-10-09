@@ -1,0 +1,11 @@
+
+div, h1, input {
+    font-family: HelveticaNeue, Helvetica;
+    color: #777;
+}
+
+#word, #text,
+.edit {
+    font-size: 20px;
+    line-height: 1.2em;
+}

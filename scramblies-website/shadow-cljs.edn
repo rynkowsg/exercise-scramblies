@@ -1,0 +1,27 @@
+{:deps
+ {:aliases [:dev :test]}
+
+ ;; since I used :deps, the below :source-paths are only for pom generation
+ :source-paths
+ ["dev" "src" "test"]
+
+ :builds
+ {:client
+  {:target     :browser
+   :output-dir "resources/public/js"
+   :modules    {:client {:init-fn scramblies-website.core/main}}
+   :devtools   {:preloads [day8.re-frame-10x.preload]
+                :repl-init-ns cljs.user
+                :repl-pprint  true}
+   :dev        {:compiler-options {:closure-defines {re-frame.trace.trace-enabled?        true
+                                                     day8.re-frame-10x.debug?             true
+                                                     day8.re-frame.tracing.trace-enabled? true}}}
+   :release    {:build-options    {:ns-aliases {day8.re-frame.tracing day8.re-frame.tracing-stubs}}
+                :compiler-options {:optimizations :simple}}}}
+
+ :dev-http
+ {3001 "resources/public"}
+
+ :nrepl
+ {:init-ns    shadow.user
+  :middleware []}}
