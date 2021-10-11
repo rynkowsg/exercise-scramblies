@@ -1,0 +1,7 @@
+brew "clojure"
+brew "curl"
+brew "git-lfs"
+brew "nvm"
+brew "jq"
+brew "jenv"
+brew "yarn"
