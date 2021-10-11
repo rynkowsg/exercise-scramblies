@@ -1,18 +1,20 @@
-(ns scramblies-website.subs
+(ns scramblies.sub
   (:require
    [re-frame.core :as rf]))
 
 (rf/reg-sub
- :text
+ ::text
  (fn [db _]
    (:text db)))
 
 (rf/reg-sub
- :word
+ ::word
  (fn [db _]
    (:word db)))
 
 (rf/reg-sub
- :result
- (fn [db _]
-   (:result db)))
+ ::result
+ (fn [{:keys [result]} _]
+   (if (not= :empty result)
+     result
+     "")))

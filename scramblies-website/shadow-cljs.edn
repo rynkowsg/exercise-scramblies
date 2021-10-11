@@ -9,7 +9,7 @@
  {:client
   {:target     :browser
    :output-dir "resources/public/js"
-   :modules    {:client {:init-fn scramblies-website.core/main}}
+   :modules    {:client {:init-fn scramblies.core/main}}
    :devtools   {:preloads [day8.re-frame-10x.preload]
                 :repl-init-ns cljs.user
                 :repl-pprint  true}

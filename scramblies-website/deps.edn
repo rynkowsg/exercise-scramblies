@@ -2,10 +2,10 @@
  ["src"]
 
  :deps
- {cljs-http/cljs-http   {:mvn/version "0.1.46"}
-  clj-commons/secretary {:mvn/version "1.2.4"}
-  reagent/reagent       {:mvn/version "1.1.0"}
-  re-frame/re-frame     {:mvn/version "1.2.0"}}
+ {cljs-http/cljs-http {:mvn/version "0.1.46"}
+  metosin/malli       {:mvn/version "0.6.2"}
+  reagent/reagent     {:mvn/version "1.1.0"}
+  re-frame/re-frame   {:mvn/version "1.2.0"}}
 
  :aliases
  {:dev
