@@ -12,4 +12,7 @@
   (testing "scramble of empty str can be rearranged to an empty str"
     (is (= true (SUT/scramble? "" ""))))
   (testing "scramble of non-empty str can be rearranged to an empty str"
-    (is (= true (SUT/scramble? "world" "")))))
+    (is (= true (SUT/scramble? "world" ""))))
+  (testing "test when word uses same letters"
+    (is (= false (SUT/scramble? "a" "aaa")))
+    (is (= false (SUT/scramble? "abc" "aaa")))))

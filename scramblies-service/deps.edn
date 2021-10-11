@@ -2,13 +2,14 @@
  ["src"]
 
  :deps
- {com.taoensso/timbre {:mvn/version "5.1.2"}
-  org.clojure/clojure {:mvn/version "1.10.3"}
-  http-kit/http-kit   {:mvn/version "2.5.3"}
-  integrant/integrant {:mvn/version "0.8.0"}
-  metosin/malli       {:mvn/version "0.6.2"}
-  metosin/reitit      {:mvn/version "0.5.15"}
-  jumblerg/ring-cors  {:mvn/version "2.0.0"}}
+ {com.taoensso/timbre        {:mvn/version "5.1.2"}
+  http-kit/http-kit          {:mvn/version "2.5.3"}
+  integrant/integrant        {:mvn/version "0.8.0"}
+  metosin/malli              {:mvn/version "0.6.2"}
+  metosin/reitit             {:mvn/version "0.5.15"}
+  jumblerg/ring-cors         {:mvn/version "2.0.0"}
+  org.clojars.achim/multiset {:mvn/version "0.1.0"}
+  org.clojure/clojure        {:mvn/version "1.10.3"}}
 
  :aliases
  {:test
