@@ -6,10 +6,10 @@
  ["dev" "src" "test"]
 
  :builds
- {:client
+ {:app
   {:target     :browser
-   :output-dir "resources/public/js"
-   :modules    {:client {:init-fn scramblies.core/main}}
+   :output-dir "public/js"
+   :modules    {:main {:init-fn scramblies.core/main}}
    :devtools   {:preloads [day8.re-frame-10x.preload]
                 :repl-init-ns cljs.user
                 :repl-pprint  true}
@@ -20,7 +20,7 @@
                 :compiler-options {:optimizations :simple}}}}
 
  :dev-http
- {3001 "resources/public"}
+ {3001 "public"}
 
  :nrepl
  {:init-ns    shadow.user

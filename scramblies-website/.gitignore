@@ -1,5 +1,6 @@
 node_modules/
 public/js
+public/css
 
 /target
 /checkouts
@@ -15,5 +16,3 @@ pom.xml.asc
 .lein-*
 .nrepl-*
 .DS_Store
-
-resources/public/js

@@ -3,19 +3,23 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "shadow:clj": "clj -M:dev:test:shadow-cljs",
-    "shadow:npm": "shadow-cljs",
-    "build:watch": "yarn shadow:clj watch client",
-    "build:release": "yarn shadow:clj release client",
-    "build:report": "yarn shadow:clj run shadow.cljs.build-report client target/build-report.html",
-    "run-release": "yarn build:release; web-server -r ./resources/public"
+    "clj-shadow": "clj -M:dev:test:shadow-cljs",
+    "npm-shadow": "shadow-cljs",
+    "shadow:watch": "yarn clj-shadow watch app",
+    "shadow:release": "yarn clj-shadow release app",
+    "shadow:report": "yarn clj-shadow run shadow.cljs.build-report app target/build-report.html",
+    "dev": "run-p -l *:watch",
+    "release": "run-s *:release",
+    "run-release": "yarn release; web-server -r ./public"
   },
   "dependencies": {
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "cross-env": "7.0.3",
     "highlight.js": "11.1.0",
+    "npm-run-all": "4.1.5",
     "shadow-cljs": "2.15.10",
     "web-server-cli": "2.0.2"
   }
